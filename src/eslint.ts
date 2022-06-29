@@ -40,9 +40,9 @@ if (isTsProject) {
 }
 
 module.exports = {
-  extends: ['prettier', 'plugin:react/recommended'],
+  extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
   parser: '@babel/eslint-parser',
-  plugins: ['react', 'jest', 'unicorn', 'react-hooks', 'prettier'],
+  plugins: ['react', 'jest', 'unicorn', 'react-hooks'],
   env: {
     browser: true,
     node: true,
@@ -53,17 +53,15 @@ module.exports = {
   },
   rules: {
     strict: ['off', 'global'],
-    'prettier/prettier': 'error',
     'react/display-name': 0,
     'react/jsx-props-no-spreading': 0,
     'react/state-in-constructor': 0,
     'react/static-property-placement': 0,
-    // Too restrictive: https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
     'react/destructuring-assignment': 'off',
     'react/jsx-filename-extension': 'off',
     'react/no-array-index-key': 'warn',
-    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-    'react-hooks/exhaustive-deps': 'warn', // Checks deps of Hooks
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'react/require-default-props': 0,
     'react/jsx-fragments': 0,
     'react/jsx-wrap-multilines': 0,
@@ -78,7 +76,6 @@ module.exports = {
     'class-methods-use-this': 0,
     'no-confusing-arrow': 0,
     'linebreak-style': 0,
-    // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
     'no-prototype-builtins': 'off',
     'unicorn/prevent-abbreviations': 'off',
     // Conflict with prettier
