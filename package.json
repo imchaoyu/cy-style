@@ -44,7 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
     "chalk": "^5.0.1",
-    "eslint": "^8.18.0",
+    "eslint": "^7",
     "eslint-config-prettier": "^8.5.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-babel": "^5.3.1",
