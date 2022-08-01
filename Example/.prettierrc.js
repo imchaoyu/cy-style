@@ -1,5 +1,5 @@
-const fabric = require('../dist/index');
+const cyStyle = require('../dist/index');
 
 module.exports = {
-  ...fabric.prettier,
+  ...cyStyle.prettier,
 };

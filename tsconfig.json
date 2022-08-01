@@ -30,7 +30,8 @@
     "tslint:latest",
     "tslint-config-prettier",
     "tsExample/**",
-    "jsExample/**"
+    "jsExample/**",
+    "Example/**"
   ],
   "include": ["src/*.json", "src/*.ts"]
 }

@@ -39,9 +39,9 @@ module.exports = {
 in `.prettierrc.js`
 
 ```js
-const fabric = require('cy-style');
+const cyStyle = require('cy-style');
 
 module.exports = {
-  ...fabric.prettier,
+  ...cyStyle.prettier,
 };
 ```
