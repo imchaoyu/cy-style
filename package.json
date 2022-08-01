@@ -1,6 +1,6 @@
 {
   "name": "cy-style",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "使用prettier, eslint, stylelint处理项目格式化",
   "keywords": [
     "eslint",
